@@ -71,7 +71,6 @@ export default function Login({ navigation }: StackScreenProps<any>) {
         const passwordIsValid = !isPasswordInvalid();
         return emailIsValid && passwordIsValid;
     };
-
     const isPasswordInvalid = (): boolean => {
         const invalidCheck = password.length < 6;
         setPasswordIsInvalid(invalidCheck);
@@ -153,19 +152,6 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontFamily: 'Nunito_700Bold',
         color: '#fff',
-    },
-
-    label: {
-        color: '#fff',
-        fontFamily: 'Nunito_600SemiBold',
-        fontSize: 15,
-    },
-
-    inputLabelRow: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'baseline',
-        marginBottom: 4,
     },
 
     input: {
